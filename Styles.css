@@ -38,6 +38,7 @@ header{
 
 }
 
+
 @media (min-width: 320px) and (max-width: 600px){
 
 .checkbtn {
@@ -46,14 +47,16 @@ header{
 #check:checked ~ ul{
     left:0;
 }
-menu i{
-    display: none;
+
+.menu a i {
+  font-size: 20px;
+  float: right;
+  margin: 15px;
+
 }
-menu{
-    display: inline-block;
-}
-ul{
-    position: fixed;
+
+.menu {
+    position: absolute;
 		width: 100%;
 		height: max-content;
 		background: white;
@@ -61,18 +64,36 @@ ul{
 		left: -100%;
 		text-align: left;
 		transition: all .5s;
-        
-        
+        list-style: none;
+        display: inline-block;
 }
+
+.submenu_p{
+   display: none;
+   list-style: none;
+    
+}
+.nav li:hover > ul{
+display: block;
+}
+
 nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;;
+    
+    margin: 20px 0;
+    line-height: 30px;
     
 }
 nav li{
     padding-left: 20px;
     color:black;
+}
+.icons{
+    float: right;
+    font-size: 25px;
+    margin: 10px;
+}
+.icons i{
+    margin: 10px;
 }
 
 }
